@@ -1,0 +1,389 @@
+/* ============================================================
+   TRIP TRAVEL — hoja de estilos compartida
+   Identidad anclada en Trujillo / La Libertad: el friso escalonado
+   de "ola marina" de Chan Chan, el caballito de totora de Huanchaco
+   y la luz del atardecer en el Pacífico.
+   ============================================================ */
+
+@font-face{
+  font-family:"Fraunces";
+  src:url("fonts/Fraunces.ttf") format("truetype-variations"), url("fonts/Fraunces.ttf") format("truetype");
+  font-weight:300 700; font-stretch:85% 100%; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:"Fraunces";
+  src:url("fonts/Fraunces-Italic.ttf") format("truetype-variations"), url("fonts/Fraunces-Italic.ttf") format("truetype");
+  font-weight:300 700; font-stretch:85% 100%; font-style:italic; font-display:swap;
+}
+@font-face{
+  font-family:"Archivo";
+  src:url("fonts/Archivo.ttf") format("truetype-variations"), url("fonts/Archivo.ttf") format("truetype");
+  font-weight:100 900; font-stretch:80% 115%; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:"Archivo";
+  src:url("fonts/Archivo-Italic.ttf") format("truetype-variations"), url("fonts/Archivo-Italic.ttf") format("truetype");
+  font-weight:100 900; font-stretch:80% 115%; font-style:italic; font-display:swap;
+}
+
+:root{
+  /* --- paleta 70/20/10 ---
+     70% dominante: blanco cálido (fondo)
+     20% secundario: turquesa del Pacífico (marca)
+     10% acento: coral de atardecer (CTA, precios, highlights) */
+  --paper:#FBF8F3;      /* 70% — fondo dominante */
+  --paper-high:#FFFFFF;
+  --card:#FFFFFF;
+  --tide:#0D7D87;       /* 20% — turquesa de marca */
+  --tide-deep:#0A5F68;
+  --gold:#FF6A3D;       /* 10% — coral de acento (CTA / precios) */
+  --gold-deep:#E0532A;
+  --clay:#D9522B;       /* coral profundo, uso decorativo puntual */
+  --ink:#0F2A33;         /* texto — noche sobre el Pacífico */
+  --ink-soft:#1F4249;
+  --reed:#6B8286;        /* texto secundario / etiquetas */
+  --line:#E3E6E2;
+  --ink-a06:rgba(15,42,51,.06);
+  --ink-a12:rgba(15,42,51,.12);
+  --ink-a40:rgba(15,42,51,.4);
+
+  --display:"Fraunces", Georgia, "Iowan Old Style", serif;
+  --sans:"Archivo", "Helvetica Neue", Arial, sans-serif;
+
+  --max:1180px;
+  --radius:3px;
+  --wa-number:51900000000; /* ⚠ reemplazar por el número real de WhatsApp de TRIP TRAVEL */
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2.5px solid var(--tide); outline-offset:3px}
+
+.container{max-width:var(--max); margin:0 auto; padding:0 28px}
+@media (max-width:640px){.container{padding:0 20px}}
+
+h1,h2,h3,h4{
+  font-family:var(--display);
+  font-weight:600;
+  font-variation-settings:"SOFT" 40, "WONK" 1, "opsz" 72;
+  line-height:1.08;
+  margin:0 0 .4em;
+  letter-spacing:-.01em;
+  color:var(--ink);
+}
+h1{font-size:clamp(2.6rem,5.4vw,4.6rem); font-weight:560}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
+h3{font-size:1.35rem; font-weight:600}
+p{margin:0 0 1em; max-width:62ch}
+.lede{font-size:1.18rem; color:var(--ink-soft); max-width:46ch}
+
+.eyebrow{
+  font-family:var(--sans); font-weight:600; font-size:.82rem;
+  letter-spacing:.01em; color:var(--tide-deep); margin:0 0 .6em;
+  display:flex; align-items:center; gap:.55em;
+}
+.eyebrow::before{content:""; width:20px; height:2px; background:var(--gold); display:inline-block; border-radius:2px}
+
+.label-sm{font-size:.82rem; font-weight:600; color:var(--reed)}
+
+/* ---------- botones ---------- */
+.btn{
+  display:inline-flex; align-items:center; gap:.5em; justify-content:center;
+  font-family:var(--sans); font-weight:600; font-size:1rem;
+  padding:.85em 1.5em; border-radius:999px; border:1.5px solid transparent;
+  cursor:pointer; text-decoration:none; transition:transform .15s ease, background .2s ease, border-color .2s ease;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--gold); color:var(--ink)}
+.btn-primary:hover{background:var(--gold-deep)}
+.btn-outline{border-color:var(--ink-a40); color:var(--ink); background:transparent}
+.btn-outline:hover{border-color:var(--ink)}
+.btn-ghost-light{border-color:rgba(251,248,243,.45); color:var(--paper-high)}
+.btn-ghost-light:hover{border-color:var(--paper-high)}
+.btn-sm{padding:.6em 1.15em; font-size:.88rem}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header{
+  position:sticky; top:0; z-index:40;
+  background:rgba(251,248,243,.88); backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--ink-a06);
+}
+.site-header .container{display:flex; align-items:center; justify-content:space-between; height:82px}
+.brand{display:flex; align-items:center; gap:.7em; text-decoration:none; color:var(--ink)}
+.brand svg{height:42px; width:auto; flex:none}
+.brand .wordmark{display:flex; flex-direction:column; line-height:1}
+.brand .wordmark .name{font-family:var(--display); font-weight:600; font-size:1.36rem; letter-spacing:-.01em}
+.brand .wordmark .name .t2{font-weight:500; color:var(--tide-deep); font-style:italic}
+.brand .wordmark .tag{font-family:var(--sans); font-weight:500; font-size:.72rem; letter-spacing:.02em; color:var(--reed); margin-top:.3em}
+
+.main-nav{display:flex; align-items:center; gap:2.1rem}
+.main-nav ul{list-style:none; display:flex; gap:1.9rem; margin:0; padding:0}
+.main-nav a{text-decoration:none; font-weight:600; font-size:.97rem; color:var(--ink-soft); padding:.3em 0; border-bottom:2px solid transparent}
+.main-nav a:hover, .main-nav a.active{color:var(--ink); border-color:var(--gold)}
+.nav-toggle{display:none; background:none; border:none; cursor:pointer; padding:8px}
+.nav-toggle span{display:block; width:24px; height:2px; background:var(--ink); margin:5px 0; border-radius:2px}
+
+@media (max-width:900px){
+  .main-nav ul{
+    position:fixed; top:82px; left:0; right:0; height:calc(100vh - 82px);
+    background:var(--paper-high); flex-direction:column;
+    padding:2rem 28px; gap:0; transform:translateY(-110%); transition:transform .3s ease; overflow-y:auto;
+    pointer-events:none;
+  }
+  .main-nav.open ul{transform:translateY(0); pointer-events:auto}
+  .main-nav ul li{border-bottom:1px solid var(--ink-a06); width:100%}
+  .main-nav ul a{display:block; padding:1em 0; font-size:1.1rem}
+  .main-nav .btn{display:none}
+  .main-nav.open .btn{display:inline-flex; margin-top:1.4rem}
+  .nav-toggle{display:block}
+}
+
+/* ============================================================
+   WAVE / FRISO — divisor escalonado inspirado en Chan Chan
+   ============================================================ */
+.wave-frieze{
+  height:22px; width:100%;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='22' viewBox='0 0 48 22'%3E%3Cpath d='M0,22 L0,14 L8,14 L8,6 L16,6 L16,14 L24,14 L24,6 L32,6 L32,14 L40,14 L40,6 L48,6 L48,22 Z' fill='%230A5F68'/%3E%3C/svg%3E");
+  background-repeat:repeat-x; background-size:48px 22px;
+}
+.wave-frieze.on-dark{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='22' viewBox='0 0 48 22'%3E%3Cpath d='M0,22 L0,14 L8,14 L8,6 L16,6 L16,14 L24,14 L24,6 L32,6 L32,14 L40,14 L40,6 L48,6 L48,22 Z' fill='%23FF6A3D'/%3E%3C/svg%3E");
+}
+
+/* ============================================================
+   REED TEXTURE — banda de trama de totora (divisor fino alterno)
+   ============================================================ */
+.reed-rule{
+  height:10px; background-image:repeating-linear-gradient(90deg, var(--reed) 0 2px, transparent 2px 9px);
+  opacity:.55;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding:64px 0 50px; position:relative; overflow:hidden}
+.hero .container{display:grid; grid-template-columns:1.05fr .95fr; gap:2.5rem; align-items:center}
+.hero-copy .stats{display:flex; gap:1.8rem; margin-top:1.9rem; flex-wrap:wrap}
+.hero-copy .stat b{display:block; font-family:var(--display); font-size:1.7rem; font-weight:600; color:var(--tide-deep)}
+.hero-copy .stat span{font-size:.82rem; color:var(--reed); font-weight:600}
+.hero-actions{display:flex; gap:1rem; margin-top:1.8rem; flex-wrap:wrap}
+.hero-art{position:relative}
+.hero-art svg{width:100%; height:auto}
+@media (max-width:900px){
+  .hero .container{grid-template-columns:1fr; text-align:left}
+  .hero-art{order:-1; max-width:420px}
+}
+
+/* ============================================================
+   PILARES DE SERVICIO (home)
+   ============================================================ */
+.pillars{padding:70px 0}
+.pillars-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1.1rem; margin-top:2.3rem}
+.pillar{
+  background:var(--card); border:1px solid var(--ink-a06); border-radius:var(--radius);
+  padding:1.9rem 1.6rem; text-decoration:none; color:var(--ink);
+  display:flex; flex-direction:column; gap:.9rem; transition:border-color .2s ease, transform .2s ease;
+}
+.pillar:hover{border-color:var(--gold); transform:translateY(-3px)}
+.pillar .pillar-icon{width:44px; height:44px}
+.pillar h3{font-size:1.14rem; margin-bottom:.15em}
+.pillar p{font-size:.93rem; color:var(--ink-soft); margin-bottom:0}
+.pillar .pillar-go{font-size:.86rem; font-weight:700; color:var(--tide-deep); margin-top:auto}
+@media (max-width:980px){.pillars-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.pillars-grid{grid-template-columns:1fr}}
+
+/* ============================================================
+   TICKET CARD — tarjeta de paquete con talón perforado
+   ============================================================ */
+.ticket-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; margin-top:2.3rem}
+@media (max-width:980px){.ticket-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:680px){.ticket-grid{grid-template-columns:1fr}}
+
+.ticket{
+  background:var(--card); border:1px solid var(--ink-a12); border-radius:6px;
+  display:flex; flex-direction:column; overflow:hidden; position:relative;
+}
+.ticket-photo{height:168px; background:linear-gradient(135deg,var(--tide) 0%, var(--tide-deep) 100%); position:relative; overflow:hidden}
+.ticket-photo svg{position:absolute; inset:0; width:100%; height:100%}
+.ticket-tag{
+  position:absolute; top:12px; left:12px; background:var(--paper-high); color:var(--ink);
+  font-size:.74rem; font-weight:700; padding:.3em .7em; border-radius:999px;
+}
+.ticket-body{padding:1.3rem 1.4rem 1.1rem}
+.ticket-body h3{font-size:1.14rem; margin-bottom:.3em}
+.ticket-meta{display:flex; gap:1rem; font-size:.84rem; color:var(--reed); font-weight:600; margin-bottom:.7em}
+.ticket-highlights{list-style:none; margin:0 0 1rem; padding:0; font-size:.88rem; color:var(--ink-soft)}
+.ticket-highlights li{padding-left:1.1em; position:relative; margin-bottom:.35em}
+.ticket-highlights li::before{content:"–"; position:absolute; left:0; color:var(--gold-deep); font-weight:700}
+
+.ticket-stub{
+  position:relative; display:flex; align-items:center; justify-content:space-between;
+  padding:.95rem 1.4rem; border-top:2px dashed var(--line); margin-top:auto;
+}
+.ticket-stub::before, .ticket-stub::after{
+  content:""; position:absolute; width:18px; height:18px; background:var(--paper);
+  border-radius:50%; top:-11px;
+}
+.ticket-stub::before{left:-9px}
+.ticket-stub::after{right:-9px}
+.ticket-price{font-family:var(--display); font-weight:600; font-size:1.3rem; color:var(--ink)}
+.ticket-price span{display:block; font-family:var(--sans); font-size:.72rem; font-weight:600; color:var(--reed)}
+
+/* ============================================================
+   FRANJA DE CONFIANZA
+   ============================================================ */
+.trust{padding:46px 0; border-top:1px solid var(--ink-a06); border-bottom:1px solid var(--ink-a06)}
+.trust-row{display:flex; flex-wrap:wrap; gap:2.6rem; align-items:center; justify-content:space-between}
+.trust-item{display:flex; align-items:center; gap:.7rem; max-width:230px}
+.trust-item svg{width:30px; height:30px; flex:none; color:var(--tide-deep)}
+.trust-item p{margin:0; font-size:.84rem; color:var(--ink-soft)}
+.trust-item strong{display:block; font-size:.92rem; color:var(--ink)}
+
+/* ============================================================
+   SECCIONES GENERALES
+   ============================================================ */
+.section{padding:78px 0}
+.section.on-ink{background:var(--tide-deep); color:var(--paper-high)}
+.section.on-ink h2, .section.on-ink h3{color:var(--paper-high)}
+.section.on-ink p{color:rgba(251,248,243,.78)}
+.section.alt{background:var(--paper-high)}
+.section-head{display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; flex-wrap:wrap}
+
+.two-col{display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center}
+@media (max-width:860px){.two-col{grid-template-columns:1fr}}
+
+/* destinos */
+.dest-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-top:2.3rem}
+@media (max-width:980px){.dest-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.dest-grid{grid-template-columns:1fr}}
+.dest-card{
+  position:relative; border-radius:6px; overflow:hidden; aspect-ratio:4/5;
+  display:flex; align-items:flex-end; padding:1.2rem; color:#fff; text-decoration:none;
+}
+.dest-card .dest-bg{position:absolute; inset:0; z-index:0}
+.dest-card::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,42,51,0) 35%, rgba(15,42,51,.86) 100%); z-index:1}
+.dest-card .dest-label{position:relative; z-index:2}
+.dest-card .dest-label strong{display:block; font-family:var(--display); font-size:1.18rem; font-weight:600}
+.dest-card .dest-label span{font-size:.8rem; opacity:.85}
+
+/* proceso / pasos reales (itinerario, sí es secuencia) */
+.steps{counter-reset:step; margin-top:2.3rem; display:grid; gap:0}
+.step{display:grid; grid-template-columns:64px 1fr; gap:1.3rem; padding:1.5rem 0; border-top:1px solid var(--ink-a12)}
+.step:last-child{border-bottom:1px solid var(--ink-a12)}
+.step .step-num{counter-increment:step; font-family:var(--display); font-size:1.5rem; color:var(--gold-deep); font-weight:600}
+.step .step-num::before{content:counter(step)}
+.step h3{margin-bottom:.25em; font-size:1.1rem}
+.step p{margin-bottom:0; font-size:.94rem; color:var(--ink-soft)}
+
+/* tabla de flota / vehiculos */
+.fleet-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; margin-top:2.3rem}
+@media (max-width:900px){.fleet-grid{grid-template-columns:1fr}}
+.fleet-card{background:var(--card); border:1px solid var(--ink-a12); border-radius:var(--radius); padding:1.6rem}
+.fleet-card .fleet-icon{width:40px; height:40px; margin-bottom:1rem}
+.fleet-card ul{margin:.8rem 0 0; padding-left:1.1em; font-size:.9rem; color:var(--ink-soft)}
+.fleet-card li{margin-bottom:.3em}
+
+/* cuadro de contacto / formulario */
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:3rem; margin-top:2.3rem}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+.field{margin-bottom:1.1rem}
+.field label{display:block; font-size:.86rem; font-weight:700; margin-bottom:.4em; color:var(--ink-soft)}
+.field input, .field select, .field textarea{
+  width:100%; font-family:var(--sans); font-size:1rem; padding:.75em .9em;
+  border:1.5px solid var(--ink-a12); border-radius:4px; background:var(--card); color:var(--ink);
+}
+.field textarea{resize:vertical; min-height:110px}
+.field input:focus, .field select:focus, .field textarea:focus{border-color:var(--tide); outline:none}
+.contact-info-list{list-style:none; margin:1.6rem 0 0; padding:0; display:grid; gap:1.1rem}
+.contact-info-list li{display:flex; gap:.9rem; align-items:flex-start}
+.contact-info-list svg{width:22px; height:22px; flex:none; color:var(--gold-deep); margin-top:.1em}
+.contact-info-list strong{display:block; font-size:.92rem}
+.contact-info-list span{font-size:.9rem; color:var(--ink-soft)}
+
+/* CTA final */
+.cta-band{padding:70px 0; background:var(--tide-deep); color:var(--paper-high); text-align:left}
+.cta-band h2{color:var(--paper-high)}
+.cta-band .container{display:flex; justify-content:space-between; align-items:center; gap:2rem; flex-wrap:wrap}
+.cta-band p{color:rgba(251,248,243,.82); margin-bottom:0}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer{background:var(--tide-deep); color:rgba(251,248,243,.82); padding:62px 0 28px}
+.footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:2.4rem}
+@media (max-width:860px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.footer-grid{grid-template-columns:1fr}}
+.footer-brand .wordmark{color:var(--paper-high)}
+.footer-brand .wordmark .t2{color:var(--gold) !important}
+.footer-brand .wordmark .tag{color:rgba(251,248,243,.55) !important}
+.footer-brand p{font-size:.9rem; max-width:32ch; color:rgba(251,248,243,.68)}
+.site-footer h4{font-family:var(--sans); font-size:.82rem; font-weight:700; letter-spacing:.04em; color:var(--paper-high); margin-bottom:1rem}
+.site-footer ul{list-style:none; margin:0; padding:0; display:grid; gap:.6rem}
+.site-footer a{text-decoration:none; color:rgba(251,248,243,.78); font-size:.92rem}
+.site-footer a:hover{color:var(--gold)}
+.footer-social{display:flex; gap:.8rem; margin-top:1.2rem}
+.footer-social a{width:36px; height:36px; border:1px solid rgba(251,248,243,.28); border-radius:50%; display:flex; align-items:center; justify-content:center}
+.footer-social svg{width:16px; height:16px}
+.footer-bottom{
+  margin-top:3rem; padding-top:1.6rem; border-top:1px solid rgba(251,248,243,.14);
+  display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; font-size:.8rem; color:rgba(251,248,243,.55);
+}
+
+/* ============================================================
+   PÁGINA: interior genérico (page-hero más compacto)
+   ============================================================ */
+.page-hero{padding:56px 0 46px}
+.page-hero .lede{margin-top:.6rem}
+
+/* breadcrumb-ish back link */
+.back-link{display:inline-flex; align-items:center; gap:.4em; font-size:.88rem; font-weight:700; color:var(--tide-deep); text-decoration:none; margin-bottom:1.2rem}
+
+/* filtros simples (tours.html) */
+.filters{display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1.8rem}
+.filters button{
+  font-family:var(--sans); font-weight:600; font-size:.88rem; padding:.55em 1.1em;
+  border-radius:999px; border:1.5px solid var(--ink-a12); background:var(--card); color:var(--ink-soft); cursor:pointer;
+}
+.filters button.active{background:var(--tide-deep); color:var(--paper-high); border-color:var(--tide-deep)}
+
+/* whatsapp floating */
+.wa-float{
+  position:fixed; bottom:22px; right:22px; z-index:50; width:58px; height:58px; border-radius:50%;
+  background:var(--tide-deep); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 22px rgba(15,42,51,.28);
+  text-decoration:none;
+}
+.wa-float svg{width:28px; height:28px; color:var(--paper-high)}
+
+/* servicios adicionales (nosotros/corporativo) lista compacta */
+.mini-list{display:grid; grid-template-columns:repeat(2,1fr); gap:.9rem 2rem; margin-top:1.8rem; list-style:none; padding:0}
+@media (max-width:640px){.mini-list{grid-template-columns:1fr}}
+.mini-list li{display:flex; gap:.7rem; font-size:.94rem; color:var(--ink-soft); align-items:flex-start}
+.mini-list li svg{width:18px; height:18px; flex:none; margin-top:.2em; color:var(--gold-deep)}
+
+/* legal/nosotros datos de empresa */
+.legal-card{background:var(--card); border:1px solid var(--ink-a12); border-radius:var(--radius); padding:1.8rem 2rem}
+.legal-card dl{display:grid; grid-template-columns:auto 1fr; gap:.55rem 1.4rem; margin:0; font-size:.92rem}
+.legal-card dt{color:var(--reed); font-weight:600}
+.legal-card dd{margin:0; color:var(--ink)}
+
+/* quote / testimonial */
+.quote{font-family:var(--display); font-size:1.5rem; font-weight:500; font-style:italic; max-width:50ch; line-height:1.4}
+.quote cite{display:block; font-family:var(--sans); font-style:normal; font-size:.86rem; font-weight:700; color:var(--reed); margin-top:1rem}

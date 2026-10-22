@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 110" width="440" height="110">
+  <style>
+    .name{font-family:"Fraunces","Iowan Old Style",Georgia,serif; font-weight:600; font-size:52px;}
+    .t1{fill:#0F2A33}
+    .t2{fill:#0D7D87; font-style:italic; font-weight:500}
+    .tag{font-family:"Archivo","Helvetica Neue",Arial,sans-serif; font-weight:500; font-size:14px; letter-spacing:.02em; fill:#6B8286}
+  </style>
+  <g transform="translate(0,5) scale(0.78)">
+    <circle cx="90" cy="26" r="9" fill="#D9522B"/>
+    <path fill="#FF6A3D" d="M22,22 C52,19 88,34 108,54 C90,77 52,81 26,65 C15,52 15,34 22,22 Z"/>
+    <rect fill="#0F2A33" x="47" y="18" width="4" height="38" rx="2" transform="rotate(12 49 37)"/>
+    <path fill="#0F2A33" d="M8,96 L8,88 L20,88 L20,80 L32,80 L32,88 L44,88 L44,80 L56,80 L56,88 L68,88 L68,80 L80,80 L80,88 L92,88 L92,80 L104,80 L104,88 L112,88 L112,96 Z"/>
+  </g>
+  <text x="112" y="56" class="name t1">TRIP <tspan class="t2">Travel</tspan></text>
+  <text x="113" y="82" class="tag">Agencia de viajes · Trujillo</text>
+</svg>

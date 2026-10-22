@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- TRIP Travel mark: Chan Chan stepped sea-wave frieze + Huanchaco caballito de totora + Pacific sun -->
+  <defs>
+    <style>
+      .ink  { fill:#0F2A33; }
+      .gold { fill:#FF6A3D; }
+      .clay { fill:#D9522B; }
+    </style>
+  </defs>
+
+  <!-- sun -->
+  <circle class="clay" cx="90" cy="26" r="9"/>
+
+  <!-- caballito de totora: long low hull with the distinctive upturned reed prow -->
+  <path class="gold" d="M22,22
+           C52,19 88,34 108,54
+           C90,77 52,81 26,65
+           C15,52 15,34 22,22 Z"/>
+  <!-- paddle, held upright as the fisherman rides it -->
+  <rect class="ink" x="47" y="18" width="4" height="38" rx="2" transform="rotate(12 49 37)"/>
+
+  <!-- Chan Chan stepped sea-wave frieze, base register -->
+  <path class="ink" d="M8,96
+           L8,88 L20,88 L20,80 L32,80 L32,88 L44,88 L44,80 L56,80 L56,88
+           L68,88 L68,80 L80,80 L80,88 L92,88 L92,80 L104,80 L104,88 L112,88
+           L112,96 Z"/>
+</svg>

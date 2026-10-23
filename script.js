@@ -41,7 +41,7 @@ if(waForm){
       `Interés: ${d.get("servicio")||"—"}\n`+
       `Mensaje: ${d.get("mensaje")||"—"}\n`+
       `Contacto: ${d.get("contacto")||"—"}`;
-    const waNumber = document.body.dataset.wa || "51900000000";
+    const waNumber = document.body.dataset.wa || "51954021718";
     window.location.href = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
   });
 }

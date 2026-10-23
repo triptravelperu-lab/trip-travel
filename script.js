@@ -53,3 +53,29 @@ const io=new IntersectionObserver((entries)=>{
   });
 },{threshold:.2});
 document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+
+/* Medios resilientes: fallback fotográfico si una URL externa deja de funcionar. */
+(function(){
+  const fallbackImages = [
+    "https://images.pexels.com/videos/4361882/archaeological-site-beautiful-view-clouds-machu-picchu-4361882.jpeg?auto=compress&dpr=1&h=750&w=1260",
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+  ];
+  document.querySelectorAll('img[data-img-fallback="true"]').forEach(img=>{
+    let attempts=0;
+    const retry=()=>{
+      if(attempts < fallbackImages.length){
+        const next=fallbackImages[attempts++];
+        if(img.src===next){retry();return;}
+        img.src=next;return;
+      }
+      img.classList.add('image-unavailable');
+      img.removeAttribute('src');
+    };
+    img.addEventListener('error',retry);
+    if(img.complete && img.naturalWidth===0) retry();
+  });
+  document.querySelectorAll('video').forEach(video=>{
+    video.addEventListener('error',()=>video.classList.add('video-unavailable'));
+  });
+})();

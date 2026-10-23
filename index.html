@@ -1,322 +1,86 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TRIP Travel — Viaja por todo el Perú</title>
-<meta name="description" content="TRIP Travel: tours, paquetes, pasajes y transporte para recorrer la costa, los Andes y la Amazonía del Perú. Diseñamos viajes a tu medida.">
+<title>Viaja conectado por el mundo | TRIP Travel</title>
+<meta name="description" content="TRIP Travel conecta inspiración de destinos, hoteles, vuelos, experiencias y transporte global desde una sola experiencia. Base en Lima, visión mundial.">
+<meta name="theme-color" content="#101329">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<meta name="theme-color" content="#ff4f36">
-<link rel="preconnect" href="https://images.unsplash.com">
-<link rel="preconnect" href="https://images.pexels.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-  <link rel="preload" as="image" href="https://images.pexels.com/videos/4361882/archaeological-site-beautiful-view-clouds-machu-picchu-4361882.jpeg?auto=compress&dpr=1&h=750&w=1260">
 </head>
 <body data-wa="51954021718" data-page="index">
-
+<a class="skip-link" href="#main" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
 <header class="site-header">
-  <div class="container">
-    <a href="index.html" class="brand">
-      <svg viewBox="0 0 120 120" aria-hidden="true">
-        <circle cx="90" cy="26" r="9" fill="#FF5238"/>
-        <path fill="#FF5238" d="M22,22 C52,19 88,34 108,54 C90,77 52,81 26,65 C15,52 15,34 22,22 Z"/>
-        <rect fill="#102B36" x="47" y="18" width="4" height="38" rx="2" transform="rotate(12 49 37)"/>
-        <path fill="#102B36" d="M8,96 L8,88 L20,88 L20,80 L32,80 L32,88 L44,88 L44,80 L56,80 L56,88 L68,88 L68,80 L80,80 L80,88 L92,88 L92,80 L104,80 L104,88 L112,88 L112,96 Z"/>
-      </svg>
-      <span class="wordmark">
-        <span class="name">TRIP <span class="t2">Travel</span></span>
-        <span class="tag">Viajes por todo el Perú</span>
-      </span>
+  <div class="header-inner wrap">
+    <a class="brand" href="index.html" aria-label="TRIP Travel inicio">
+      <img src="assets/images/trip-travel-logo.png" class="brand-logo" alt="TRIP Travel logo">
+      <span class="brand-tag" data-es="VIAJA CONECTADO" data-en="TRAVEL CONNECTED">VIAJA CONECTADO</span>
     </a>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="tours.html">Tours y paquetes</a></li>
-        <li><a href="transporte.html">Transporte</a></li>
-        <li><a href="corporativo.html">Corporativo</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      <a class="btn btn-primary btn-sm" href="https://wa.me/51954021718?text=Hola%20TRIP%20Travel%2C%20quiero%20cotizar%20un%20viaje" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
-    </nav>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul><li><a href="destinos.html" class="" data-es="Descubrir" data-en="Discover">Descubrir</a></li><li><a href="hoteles.html" class="" data-es="Hoteles" data-en="Stays">Hoteles</a></li><li><a href="vuelos.html" class="" data-es="Vuelos" data-en="Flights">Vuelos</a></li><li><a href="experiencias.html" class="" data-es="Experiencias" data-en="Experiences">Experiencias</a></li><li><a href="conexiones.html" class="" data-es="Conexiones" data-en="Connections">Conexiones</a></li></ul>
+      <div class="nav-tools"><button type="button" class="language-toggle" id="languageToggle" aria-label="Cambiar idioma"><span data-es="ES" data-en="EN">ES</span><span class="lang-sep">/</span><span data-es="EN" data-en="ES">EN</span></button>
+      <a class="btn btn-primary btn-small" href="contacto.html" data-es="Planear un viaje ↗" data-en="Plan a trip ↗">Planear un viaje ↗</a></div>
+    </nav>
   </div>
 </header>
-
-<main>
-
-  <!-- ============== HERO ============== -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-copy">
-        <h1>El Perú entero.<br><em>Tu próxima gran historia.</em></h1>
-        <p class="lede">De los desiertos dorados a las cumbres andinas y la selva amazónica. Creamos experiencias a tu medida en cada rincón del Perú, con tours, pasajes y transporte en un solo lugar.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/51954021718?text=Hola%20TRIP%20Travel%2C%20quiero%20planear%20un%20viaje" target="_blank" rel="noopener">Planear mi viaje</a>
-          <a class="btn btn-outline" href="tours.html">Ver paquetes</a>
-        </div>
-        <div class="stats">
-          <div class="stat"><b>4</b><span>líneas de servicio bajo un mismo RUC</span></div>
-          <div class="stat"><b>Todo el Perú</b><span>destinos de costa, sierra y selva</span></div>
-          <div class="stat"><b>24/7</b><span>cotización directa por WhatsApp</span></div>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="hero-media-frame">
-          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/4361882/archaeological-site-beautiful-view-clouds-machu-picchu-4361882.jpeg?auto=compress&dpr=1&h=750&w=1260" aria-label="Vista panorámica de Machu Picchu y los Andes">
-            <source src="https://videos.pexels.com/video-files/29604765/12740973_3840_2160_30fps.mp4" type="video/mp4">
-          </video>
-          <div class="hero-media-shade"></div>
-          <div class="media-topline"><span class="live-dot"></span> INSPÍRATE · VIAJA · DESCUBRE</div>
-          <div class="media-caption"><span>01 / DESTINO DESTACADO</span><strong>Machu Picchu, Cusco</strong><small>Una experiencia que se queda contigo.</small></div>
-          <div class="media-sticker"><span>12</span><small>ideas para<br>empezar tu ruta</small></div>
-        </div>
-        <div class="hero-float-card hero-float-one"><img src="https://images.pexels.com/photos/4835536/pexels-photo-4835536.jpeg?auto=compress&dpr=1&h=750&w=1260" alt="Oasis de Huacachina" loading="lazy" decoding="async" data-img-fallback="true"><span><small>AVENTURA</small><strong>Huacachina</strong></span></div>
-        <div class="hero-float-card hero-float-two"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1400&q=85" alt="Playa Roja en Paracas" loading="lazy" decoding="async" data-img-fallback="true"><span><small>COSTA</small><strong>Paracas</strong></span></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="wave-frieze" role="presentation"></div>
-
-  <!-- ============== PILARES ============== -->
-  <section class="pillars">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Qué necesitas</p>
-          <h2>Un solo contacto para todo el viaje</h2>
-        </div>
-      </div>
-      <div class="pillars-grid">
-        <a class="pillar" href="tours.html">
-          <svg class="pillar-icon" viewBox="0 0 44 44" fill="none"><path d="M6,30 C6,30 16,12 30,8 C27,18 27,26 31,33 C40,27 38,27 38,27 C32,38 18,40 10,36 C7,34 6,32 6,30Z" fill="#FF5238"/><rect x="16" y="6" width="2.6" height="15" rx="1.3" fill="#102B36" transform="rotate(14 17 13)"/></svg>
-          <h3>Tours y paquetes</h3>
-          <p>Experiencias diseñadas en la costa, los Andes y la Amazonía, con logística coordinada de principio a fin.</p>
-          <span class="pillar-go">Ver destinos →</span>
-        </a>
-        <a class="pillar" href="tours.html#boletos">
-          <svg class="pillar-icon" viewBox="0 0 44 44" fill="none"><rect x="5" y="14" width="34" height="18" rx="2" fill="none" stroke="#087F8C" stroke-width="2.4"/><path d="M5,23 h34" stroke="#087F8C" stroke-width="2.4" stroke-dasharray="1 5"/><circle cx="14" cy="23" r="2" fill="#087F8C"/></svg>
-          <h3>Vuelos y boletos</h3>
-          <p>Boletos aéreos, terrestres, marítimos y ferroviarios, locales e internacionales, con seguro de viaje.</p>
-          <span class="pillar-go">Cotizar pasaje →</span>
-        </a>
-        <a class="pillar" href="transporte.html">
-          <svg class="pillar-icon" viewBox="0 0 44 44" fill="none"><rect x="5" y="16" width="30" height="14" rx="3" fill="none" stroke="#FF5238" stroke-width="2.4"/><circle cx="13" cy="32" r="3.4" fill="#FF5238"/><circle cx="31" cy="32" r="3.4" fill="#FF5238"/><path d="M9,16 L13,9 H27 L31,16" fill="none" stroke="#FF5238" stroke-width="2.4"/></svg>
-          <h3>Transporte y traslados</h3>
-          <p>Movilidad privada, transfers aeropuerto–hotel y alquiler de vehículos con o sin chofer.</p>
-          <span class="pillar-go">Ver flota →</span>
-        </a>
-        <a class="pillar" href="corporativo.html">
-          <svg class="pillar-icon" viewBox="0 0 44 44" fill="none"><rect x="7" y="16" width="30" height="21" rx="2" fill="none" stroke="#102B36" stroke-width="2.4"/><path d="M16,16 V11 a3,3 0 0 1 3,-3 h6 a3,3 0 0 1 3,3 v5" fill="none" stroke="#102B36" stroke-width="2.4"/></svg>
-          <h3>Turismo corporativo</h3>
-          <p>Eventos, congresos y viajes de incentivo para empresas, con consultoría en turismo incluida.</p>
-          <span class="pillar-go">Ver servicios →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== DESTINOS DE TODO EL PERÚ ============== -->
-  <section class="section alt destination-showcase">
-    <div class="container">
-      <div class="section-head destination-heading">
-        <div>
-          <p class="eyebrow">Inspiración para tu próxima aventura</p>
-          <h2>Un país inmenso.<br><em>Mil formas de descubrirlo.</em></h2>
-          <p class="section-intro">De la costa roja de Paracas a los picos nevados de Huaraz y los ríos amazónicos. Tu viaje empieza con una idea; nosotros ayudamos a convertirla en ruta.</p>
-        </div>
-        <a class="btn btn-outline btn-sm" href="tours.html">Explorar todos los tours <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="dest-grid dest-grid-national">
-        <a class="dest-card dest-feature" href="tours.html" aria-label="Explorar Cusco y Machu Picchu">
-          <img class="dest-bg" src="https://images.pexels.com/videos/4361882/archaeological-site-beautiful-view-clouds-machu-picchu-4361882.jpeg?auto=compress&dpr=1&h=750&w=1260" alt="Ciudadela de Machu Picchu entre montañas verdes" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>01 · Andes</small><strong>Cusco & Machu Picchu</strong><span>Historia que se vive en primera persona</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar Huacachina e Ica">
-          <img class="dest-bg" src="https://images.pexels.com/photos/4835536/pexels-photo-4835536.jpeg?auto=compress&dpr=1&h=750&w=1260" alt="Oasis de Huacachina rodeado de dunas del desierto" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>02 · Desierto</small><strong>Huacachina</strong><span>Aventura entre dunas doradas</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar Paracas">
-          <img class="dest-bg" src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1400&q=85" alt="Costa del Pacífico en la Reserva Nacional de Paracas" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>03 · Costa</small><strong>Paracas</strong><span>Océano, vida marina y paisajes únicos</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar Huaraz y la Cordillera Blanca">
-          <img class="dest-bg" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1500&q=85" alt="Montañas altas de la Cordillera Blanca, en la zona de Huaraz" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>04 · Montaña</small><strong>Huaraz</strong><span>Lagunas turquesas y cumbres nevadas</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar Arequipa y Colca">
-          <img class="dest-bg" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=85" alt="Mirador y terrazas andinas en la región de Arequipa" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>05 · Cultura</small><strong>Arequipa & Colca</strong><span>Arquitectura blanca y grandes cañones</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar la Amazonía peruana">
-          <img class="dest-bg" src="https://images.pexels.com/photos/30302547/pexels-photo-30302547.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Vista aérea de un río amazónico entre bosque tropical" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>06 · Amazonía</small><strong>Selva peruana</strong><span>Biodiversidad y naturaleza viva</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar el Lago Titicaca en Puno">
-          <img class="dest-bg" src="https://images.pexels.com/photos/28034052/pexels-photo-28034052.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Embarcación tradicional sobre las aguas del Lago Titicaca" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>07 · Altiplano</small><strong>Lago Titicaca</strong><span>Tradiciones que flotan sobre el azul</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar Lima y su costa">
-          <img class="dest-bg" src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1400&q=85" alt="Vista costera y edificios de Miraflores, Lima" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>08 · Ciudad</small><strong>Lima</strong><span>Gastronomía, arte y costa urbana</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar Trujillo y la Ruta Moche">
-          <img class="dest-bg" src="https://images.unsplash.com/photo-1531065208531-efa0ca36b0f0?auto=format&fit=crop&w=1400&q=85" alt="Paisaje y patrimonio del norte peruano" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>09 · Norte</small><strong>Trujillo & Ruta Moche</strong><span>Historia viva, cultura y costa norte</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar la selva peruana">
-          <img class="dest-bg" src="https://images.pexels.com/photos/30302547/pexels-photo-30302547.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Bosque tropical de la Amazonía peruana" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>10 · Naturaleza</small><strong>Amazonía</strong><span>Ríos, sonidos y vida silvestre</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar lagunas y paisajes andinos">
-          <img class="dest-bg" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=85" alt="Laguna de montaña en paisaje andino" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>11 · Aventura</small><strong>Lagunas andinas</strong><span>Rutas para salir de lo cotidiano</span></span>
-        </a>
-        <a class="dest-card" href="tours.html" aria-label="Explorar caminos y paisajes del Perú">
-          <img class="dest-bg" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=85" alt="Carretera escénica para viajar por carretera" loading="lazy" decoding="async" data-img-fallback="true">
-          <span class="dest-label"><small>12 · Road trip</small><strong>Rutas del Perú</strong><span>El camino también es destino</span></span>
-        </a>
-      </div>
-      <p class="image-credit-note">Las fotografías son referenciales; los destinos, servicios, fechas y actividades se confirman al cotizar.</p>
-    </div>
-  </section>
-
-  <!-- ============== MOSAICO: PAISAJES EN MOVIMIENTO ============== -->
-  <section class="motion-section">
-    <div class="container motion-grid">
-      <div class="motion-copy">
-        <p class="eyebrow">Del primer vistazo al viaje real</p>
-        <h2>Una sola web. <em>Todo un país por explorar.</em></h2>
-        <p>Desiertos, lagunas de altura, ciudades llenas de vida y selva profunda. Mira algunas ideas y cuéntanos qué tipo de viaje te gustaría vivir.</p>
-        <a class="btn btn-primary" href="tours.html">Encuentra tu próxima ruta <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="motion-photo-grid">
-        <a class="motion-shot motion-shot-large" href="tours.html"><img src="https://images.pexels.com/photos/35832576/pexels-photo-35832576.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Laguna turquesa y montañas nevadas de Huaraz" loading="lazy" decoding="async" data-img-fallback="true"><span>Lagunas andinas</span></a>
-        <a class="motion-shot" href="tours.html"><img src="https://images.pexels.com/photos/4835536/pexels-photo-4835536.jpeg?auto=compress&dpr=1&h=750&w=1260" alt="Oasis de Huacachina entre dunas" loading="lazy" decoding="async" data-img-fallback="true"><span>Desierto</span></a>
-        <a class="motion-shot" href="tours.html"><img src="https://images.pexels.com/photos/30302547/pexels-photo-30302547.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Río amazónico entre bosque tropical" loading="lazy" decoding="async" data-img-fallback="true"><span>Amazonía</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== PERÚ COMPLETO ============== -->
-  <section class="section">
-    <div class="container two-col">
-      <div>
-        <p class="eyebrow">Cobertura de costa a selva</p>
-        <h2>Del desierto a la Amazonía, armamos tu ruta por el Perú</h2>
-        <p>Desde la costa del Pacífico hasta los Andes, la Amazonía y el altiplano: coordinamos boletos, hospedaje, guiado y transporte para que cada tramo de tu viaje encaje.</p>
-        <a class="btn btn-outline" href="tours.html">Explorar paquetes nacionales</a>
-      </div>
-      <div class="legal-card" style="background:var(--paper-high)">
-        <ul class="mini-list" style="grid-template-columns:1fr">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Boletos aéreos, terrestres, marítimos y ferroviarios</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Guiado, asistencia al viajero y trámites de visado</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Seguro de viaje y asistencia en el destino</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Reserva de hospedaje y restauración</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== CONFIANZA ============== -->
-  <section class="trust">
-    <div class="container trust-row">
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-        <p><strong>RUC 20616238591</strong>verificado en SUNAT como agencia de viajes</p>
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
-        <p><strong>CIIU 7911 / 7912</strong>agencia de viajes y operador turístico registrados</p>
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        <p><strong>Trato directo</strong>cotización y seguimiento por WhatsApp, sin intermediarios</p>
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <p><strong>Atención nacional</strong>viajes a medida en destinos de todo el Perú</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== CTA FINAL ============== -->
-  <section class="cta-band">
-    <div class="container">
-      <div>
-        <h2>Cuéntanos qué viaje tienes en mente</h2>
-        <p>Respondemos por WhatsApp con un itinerario y una cotización a la medida.</p>
-      </div>
-      <a class="btn btn-primary" href="https://wa.me/51954021718?text=Hola%20TRIP%20Travel%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand" style="margin-bottom:1rem">
-          <svg viewBox="0 0 120 120" aria-hidden="true">
-            <circle cx="90" cy="26" r="9" fill="#FF5238"/>
-            <path fill="#FF5238" d="M22,22 C52,19 88,34 108,54 C90,77 52,81 26,65 C15,52 15,34 22,22 Z"/>
-            <rect fill="#FBF8F3" x="47" y="18" width="4" height="38" rx="2" transform="rotate(12 49 37)"/>
-            <path fill="#FBF8F3" opacity=".5" d="M8,96 L8,88 L20,88 L20,80 L32,80 L32,88 L44,88 L44,80 L56,80 L56,88 L68,88 L68,80 L80,80 L80,88 L92,88 L92,80 L104,80 L104,88 L112,88 L112,96 Z"/>
-          </svg>
-          <span class="wordmark">
-            <span class="name">TRIP <span class="t2">Travel</span></span>
-            <span class="tag">Viajes por todo el Perú</span>
-          </span>
-        </a>
-        <p>Organización, venta y operación de servicios turísticos, pasajes y transporte, con sede en Trujillo, La Libertad.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-        </div>
-      </div>
-      <div>
-        <h4>Servicios</h4>
-        <ul>
-          <li><a href="tours.html">Tours y paquetes</a></li>
-          <li><a href="tours.html#boletos">Vuelos y boletos</a></li>
-          <li><a href="transporte.html">Transporte y traslados</a></li>
-          <li><a href="corporativo.html">Turismo corporativo</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Destinos</h4>
-        <ul>
-          <li><a href="tours.html">Chan Chan</a></li>
-          <li><a href="tours.html">Huanchaco</a></li>
-          <li><a href="tours.html">Huacas del Sol y la Luna</a></li>
-          <li><a href="tours.html">Cusco y Machu Picchu</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <ul>
-          <li><a href="https://wa.me/51954021718" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li><a href="mailto:reservas@triptravel.pe">reservas@triptravel.pe</a></li>
-          <li><a href="nosotros.html">Cal. Arequipa 271, Urb. Palermo, Trujillo</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 TRIP TRAVEL S.A.C. · RUC 20616238591</span>
-      <span>Trujillo, La Libertad — Perú</span>
-    </div>
+<main id="main">
+<section class="global-hero">
+ <div class="hero-image-layer" aria-hidden="true"></div><div class="hero-noise" aria-hidden="true"></div>
+ <div class="wrap global-hero-grid">
+  <div class="hero-content">
+   <div class="eyebrow-pill"><span class="pulse-dot"></span><span data-es="TRIP TRAVEL · CONEXIONES GLOBALES" data-en="TRIP TRAVEL · GLOBAL CONNECTIONS">TRIP TRAVEL · CONEXIONES GLOBALES</span></div>
+   <h1 data-es="El mundo es enorme.<br><em>Conectemos tu viaje.</em>" data-en="The world is wide.<br><em>Let's connect your journey.</em>">El mundo es enorme.<br><em>Conectemos tu viaje.</em></h1>
+   <p class="hero-lede" data-es="Hoteles, vuelos, experiencias, rutas y lugares extraordinarios. Una forma más inteligente de descubrir opciones en todo el mundo, con asesoría humana desde Lima." data-en="Hotels, flights, experiences, routes and extraordinary places. A smarter way to explore options worldwide, with human support from Lima.">Hoteles, vuelos, experiencias, rutas y lugares extraordinarios. Una forma más inteligente de descubrir opciones en todo el mundo, con asesoría humana desde Lima.</p>
+   <div class="hero-actions"><a class="btn btn-primary" href="#trip-connect" data-es="Explorar conexiones <span>↘</span>" data-en="Explore connections <span>↘</span>">Explorar conexiones <span>↘</span></a><a class="btn btn-glass" href="conexiones.html" data-es="Cómo funciona <span>↗</span>" data-en="How it works <span>↗</span>">Cómo funciona <span>↗</span></a></div>
+   <div class="hero-micro-trust"><div class="avatar-stack"><span>L</span><span>✈</span><span>◎</span></div><div><strong data-es="Una salida para explorar el mundo" data-en="One starting point to explore the world">Una salida para explorar el mundo</strong><small data-es="Sin prometer disponibilidad que no hemos verificado" data-en="No unverified availability claims">Sin prometer disponibilidad que no hemos verificado</small></div></div>
   </div>
+  <div class="hero-visual-card"><img src="assets/images/world-hero.webp" alt="Panorama de inspiración que conecta ciudades, islas, montañas y naturaleza de distintos continentes" fetchpriority="high"><div class="image-grain"></div><div class="hero-stamp"><span class="stamp-orbit">✳</span><span data-es="UN PLANETA.<br>MIL CAMINOS." data-en="ONE PLANET.<br>A THOUSAND PATHS.">UN PLANETA.<br>MIL CAMINOS.</span></div><div class="hero-image-caption"><span class="live-line"></span><span data-es="TU PRÓXIMO DESTINO COMIENZA CON UNA IDEA" data-en="YOUR NEXT DESTINATION STARTS WITH AN IDEA">TU PRÓXIMO DESTINO COMIENZA CON UNA IDEA</span></div></div>
+ </div>
+ <div class="hero-bottom-mark wrap"><span>01 / 04</span><span class="hero-bottom-rule"></span><span data-es="DESCUBRE · COMPARA · CONECTA" data-en="DISCOVER · COMPARE · CONNECT">DESCUBRE · COMPARA · CONECTA</span></div>
+</section>
+<section id="trip-connect" class="connect-search-section"><div class="wrap"><section class="search-console " aria-label="Buscador global">
+      <div class="search-console-head"><div><span class="micro-label" data-es="TRIP CONNECT" data-en="TRIP CONNECT">TRIP CONNECT</span><h2 data-es="Tu viaje empieza aquí" data-en="Your journey starts here">Tu viaje empieza aquí</h2></div><span class="search-live"><i></i><span data-es="Conexiones de búsqueda global" data-en="Global search connections">Conexiones de búsqueda global</span></span></div>
+      <div class="search-tabs" role="tablist" aria-label="Tipo de búsqueda"><button type="button" class="search-tab selected" data-search-service="all" aria-pressed="true"><span>✦</span><span data-es="Todo" data-en="All">Todo</span></button><button type="button" class="search-tab " data-search-service="stays" aria-pressed="false"><span>▱</span><span data-es="Hoteles" data-en="Stays">Hoteles</span></button><button type="button" class="search-tab " data-search-service="flights" aria-pressed="false"><span>✈</span><span data-es="Vuelos" data-en="Flights">Vuelos</span></button><button type="button" class="search-tab " data-search-service="experiences" aria-pressed="false"><span>✺</span><span data-es="Experiencias" data-en="Experiences">Experiencias</span></button><button type="button" class="search-tab " data-search-service="routes" aria-pressed="false"><span>↗</span><span data-es="Rutas" data-en="Routes">Rutas</span></button></div>
+      <form class="global-search-form" data-search-form data-search-type="all" id="globalSearchHome">
+        <div class="field field-origin"><label for="originHome" data-es="Desde" data-en="From">Desde</label><div class="field-wrap"><span class="field-icon">⌖</span><input id="originHome" name="origin" type="text" placeholder="Lima, Perú" value="Lima, Perú" autocomplete="off"></div></div>
+        <div class="field field-destination"><label for="destinationHome" data-es="¿A dónde vamos?" data-en="Where to?">¿A dónde vamos?</label><div class="field-wrap"><span class="field-icon">◎</span><input id="destinationHome" name="destination" type="text" placeholder="Tokio, Japón / cualquier destino" autocomplete="off" required></div></div>
+        <div class="field"><label for="departHome" data-es="Salida" data-en="Departure">Salida</label><div class="field-wrap"><span class="field-icon">▦</span><input id="departHome" name="depart" type="date"></div></div>
+        <div class="field"><label for="returnHome" data-es="Regreso" data-en="Return">Regreso</label><div class="field-wrap"><span class="field-icon">▦</span><input id="returnHome" name="return" type="date"></div></div>
+        <div class="field field-guests"><label for="guestsHome" data-es="Viajeros" data-en="Travelers">Viajeros</label><div class="field-wrap"><span class="field-icon">♙</span><select id="guestsHome" name="guests"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6+">6+</option></select></div></div>
+        <button class="btn btn-search" type="submit"><span data-es="Conectar opciones" data-en="Find connections">Conectar opciones</span><span class="search-arrow">↗</span></button>
+      </form>
+      <div class="search-hint"><span class="hint-icon">✦</span><span data-es="Busca por ciudad, país, aeropuerto o lugar. Los proveedores mostrarán su disponibilidad y precios actualizados." data-en="Search by city, country, airport or place. Providers show their own live availability and prices.">Busca por ciudad, país, aeropuerto o lugar. Los proveedores mostrarán su disponibilidad y precios actualizados.</span></div>
+      <div class="search-results" aria-live="polite" hidden><div class="search-results-head"><h3 data-es="Opciones para continuar" data-en="Your next steps">Opciones para continuar</h3><button class="clear-results" type="button" data-es="Nueva búsqueda ×" data-en="New search ×">Nueva búsqueda ×</button></div><p class="result-disclaimer" data-es="Son enlaces de búsqueda a sitios externos; TRIP Travel no consulta inventario en tiempo real ni confirma reservas desde esta página." data-en="These are search links to external sites; TRIP Travel does not query live inventory or confirm bookings from this page.">Son enlaces de búsqueda a sitios externos; TRIP Travel no consulta inventario en tiempo real ni confirma reservas desde esta página.</p><div class="provider-results"></div></div>
+    </section><div class="search-section-foot"><span>TRIP CONNECT <b>01</b></span><span data-es="El punto de partida para todas tus rutas" data-en="The starting point for every route">El punto de partida para todas tus rutas</span></div></div></section>
+<section class="section-light section-pad"><div class="wrap"><div class="section-heading split-heading"><div><span class="section-kicker" data-es="UN MUNDO DE OPCIONES" data-en="A WORLD OF OPTIONS">UN MUNDO DE OPCIONES</span><h2 data-es="Del primer impulso<br><em>al siguiente destino.</em>" data-en="From the first spark<br><em>to your next destination.</em>">Del primer impulso<br><em>al siguiente destino.</em></h2></div><p data-es="Descubre destinos por continente y continúa con búsquedas de alojamiento, vuelos, actividades y rutas en herramientas especializadas." data-en="Discover destinations by region, then continue with searches for stays, flights, activities and transport using specialist tools.">Descubre destinos por continente y continúa con búsquedas de alojamiento, vuelos, actividades y rutas en herramientas especializadas.</p></div>
+ <div class="world-grid"><a class="world-card" data-region="world" href="experiencias.html?destination=París, Francia" aria-label="Explorar París"><div class="world-card-image"><img src="assets/images/world-paris.webp" alt="Paisaje de inspiración para París" loading="lazy" decoding="async"><span class="world-card-index">01</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Francia" data-en="France">Francia</small><h3 data-es="París" data-en="Paris">París</h3></div><p data-es="Arte, gastronomía y noches luminosas" data-en="Art, food and luminous nights">Arte, gastronomía y noches luminosas</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Japón, Asia" aria-label="Explorar Japón"><div class="world-card-image"><img src="assets/images/world-japan.webp" alt="Paisaje de inspiración para Japón" loading="lazy" decoding="async"><span class="world-card-index">02</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Asia" data-en="Asia">Asia</small><h3 data-es="Japón" data-en="Japan">Japón</h3></div><p data-es="Tradición, diseño y nuevas perspectivas" data-en="Tradition, design and fresh perspectives">Tradición, diseño y nuevas perspectivas</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Islas tropicales, Océano Índico / Pacífico" aria-label="Explorar Islas tropicales"><div class="world-card-image"><img src="assets/images/world-islands.webp" alt="Paisaje de inspiración para Islas tropicales" loading="lazy" decoding="async"><span class="world-card-index">03</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Océano Índico / Pacífico" data-en="Indian / Pacific Ocean">Océano Índico / Pacífico</small><h3 data-es="Islas tropicales" data-en="Tropical islands">Islas tropicales</h3></div><p data-es="Agua transparente y ritmo lento" data-en="Clear water and slow living">Agua transparente y ritmo lento</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Alpes, Europa" aria-label="Explorar Alpes"><div class="world-card-image"><img src="assets/images/world-alps.webp" alt="Paisaje de inspiración para Alpes" loading="lazy" decoding="async"><span class="world-card-index">04</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Europa" data-en="Europe">Europa</small><h3 data-es="Alpes" data-en="The Alps">Alpes</h3></div><p data-es="Trenes panorámicos y cumbres" data-en="Panoramic rail journeys and peaks">Trenes panorámicos y cumbres</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Nueva York, Estados Unidos" aria-label="Explorar Nueva York"><div class="world-card-image"><img src="assets/images/world-newyork.webp" alt="Paisaje de inspiración para Nueva York" loading="lazy" decoding="async"><span class="world-card-index">05</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Estados Unidos" data-en="United States">Estados Unidos</small><h3 data-es="Nueva York" data-en="New York">Nueva York</h3></div><p data-es="Horizonte urbano, cultura y energía" data-en="Skyline, culture and energy">Horizonte urbano, cultura y energía</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Roma, Italia" aria-label="Explorar Roma"><div class="world-card-image"><img src="assets/images/world-rome.webp" alt="Paisaje de inspiración para Roma" loading="lazy" decoding="async"><span class="world-card-index">06</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Italia" data-en="Italy">Italia</small><h3 data-es="Roma" data-en="Rome">Roma</h3></div><p data-es="Capas de historia y vida italiana" data-en="Layers of history and Italian life">Capas de historia y vida italiana</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Dubái, Emiratos Árabes Unidos" aria-label="Explorar Dubái"><div class="world-card-image"><img src="assets/images/world-dubai.webp" alt="Paisaje de inspiración para Dubái" loading="lazy" decoding="async"><span class="world-card-index">07</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Emiratos Árabes Unidos" data-en="United Arab Emirates">Emiratos Árabes Unidos</small><h3 data-es="Dubái" data-en="Dubai">Dubái</h3></div><p data-es="Arquitectura audaz y desierto" data-en="Bold architecture and desert">Arquitectura audaz y desierto</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Marruecos, Norte de África" aria-label="Explorar Marruecos"><div class="world-card-image"><img src="assets/images/world-morocco.webp" alt="Paisaje de inspiración para Marruecos" loading="lazy" decoding="async"><span class="world-card-index">08</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Norte de África" data-en="North Africa">Norte de África</small><h3 data-es="Marruecos" data-en="Morocco">Marruecos</h3></div><p data-es="Medinas azules y cultura viva" data-en="Blue medinas and living culture">Medinas azules y cultura viva</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Tailandia, Sudeste Asiático" aria-label="Explorar Tailandia"><div class="world-card-image"><img src="assets/images/world-thailand.webp" alt="Paisaje de inspiración para Tailandia" loading="lazy" decoding="async"><span class="world-card-index">09</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Sudeste Asiático" data-en="Southeast Asia">Sudeste Asiático</small><h3 data-es="Tailandia" data-en="Thailand">Tailandia</h3></div><p data-es="Calas turquesas y paisajes tropicales" data-en="Turquoise coves and tropical scenery">Calas turquesas y paisajes tropicales</p></div></a><a class="world-card" data-region="peru" href="experiencias.html?destination=Cusco &amp; Machu Picchu, Perú" aria-label="Explorar Cusco &amp; Machu Picchu"><div class="world-card-image"><img src="assets/images/machu-picchu.webp" alt="Paisaje de inspiración para Cusco &amp; Machu Picchu" loading="lazy" decoding="async"><span class="world-card-index">10</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Perú" data-en="Peru">Perú</small><h3 data-es="Cusco &amp; Machu Picchu" data-en="Cusco &amp; Machu Picchu">Cusco & Machu Picchu</h3></div><p data-es="Historia viva entre montañas" data-en="Living history among the mountains">Historia viva entre montañas</p></div></a><a class="world-card" data-region="world" href="experiencias.html?destination=Amazonía, Sudamérica" aria-label="Explorar Amazonía"><div class="world-card-image"><img src="assets/images/amazon-river.webp" alt="Paisaje de inspiración para Amazonía" loading="lazy" decoding="async"><span class="world-card-index">06</span><span class="world-card-cta">↗</span></div><div class="world-card-copy"><div><small data-es="Sudamérica" data-en="South America">Sudamérica</small><h3 data-es="Amazonía" data-en="The Amazon">Amazonía</h3></div><p data-es="Ríos inmensos y biodiversidad" data-en="Vast rivers and biodiversity">Ríos inmensos y biodiversidad</p></div></a></div>
+ <div class="section-bottom-action"><a class="text-link" href="destinos.html" data-es="Ver todos los destinos inspiradores <span>↗</span>" data-en="Explore all destination inspiration <span>↗</span>">Ver todos los destinos inspiradores <span>↗</span></a><span class="muted-label" data-es="INSPIRACIÓN PARA PLANEAR, NO UN CATÁLOGO CERRADO" data-en="INSPIRATION TO PLAN, NOT A CLOSED CATALOG">INSPIRACIÓN PARA PLANEAR, NO UN CATÁLOGO CERRADO</span></div>
+ </div></section>
+<section class="section-dark section-pad"><div class="wrap"><div class="section-heading split-heading inverse"><div><span class="section-kicker" data-es="LA EXPERIENCIA COMPLETA" data-en="THE COMPLETE EXPERIENCE">LA EXPERIENCIA COMPLETA</span><h2 data-es="Todo lo que conecta<br><em>un buen viaje.</em>" data-en="Everything that connects<br><em>a great journey.</em>">Todo lo que conecta<br><em>un buen viaje.</em></h2></div><p data-es="No necesitas resolver todo de una vez. Empieza por lo que tienes claro y conecta el resto paso a paso." data-en="You don't need every detail figured out. Start with what you know, then connect the rest step by step.">No necesitas resolver todo de una vez. Empieza por lo que tienes claro y conecta el resto paso a paso.</p></div>
+ <div class="service-grid"><a class="service-card service-card-blue" href="hoteles.html"><span class="service-icon">▱</span><span class="service-no">01 / STAYS</span><h3 data-es="Encuentra dónde quedarte" data-en="Find your place to stay">Encuentra dónde quedarte</h3><p data-es="Hoteles, apartamentos, alojamientos únicos y estancias de larga duración." data-en="Hotels, apartments, unique stays and longer visits.">Hoteles, apartamentos, alojamientos únicos y estancias de larga duración.</p><span class="card-arrow">↗</span></a><a class="service-card service-card-coral" href="vuelos.html"><span class="service-icon">✈</span><span class="service-no">02 / FLIGHTS</span><h3 data-es="Compara cómo llegar" data-en="Compare ways to get there">Compara cómo llegar</h3><p data-es="Explora vuelos y continúa la búsqueda en comparadores globales." data-en="Explore flights and continue in global comparison tools.">Explora vuelos y continúa la búsqueda en comparadores globales.</p><span class="card-arrow">↗</span></a><a class="service-card service-card-lime" href="experiencias.html"><span class="service-icon">✺</span><span class="service-no">03 / EXPERIENCES</span><h3 data-es="Vive algo diferente" data-en="Make it memorable">Vive algo diferente</h3><p data-es="Tours, entradas, actividades, museos, naturaleza y gastronomía." data-en="Tours, tickets, activities, museums, nature and food.">Tours, entradas, actividades, museos, naturaleza y gastronomía.</p><span class="card-arrow">↗</span></a><a class="service-card service-card-violet" href="conexiones.html"><span class="service-icon">⤳</span><span class="service-no">04 / MOBILITY</span><h3 data-es="Conecta cada tramo" data-en="Connect every leg">Conecta cada tramo</h3><p data-es="Trenes, buses, ferris, autos de alquiler y orientación para moverte." data-en="Trains, buses, ferries, rental cars and local mobility.">Trenes, buses, ferris, autos de alquiler y orientación para moverte.</p><span class="card-arrow">↗</span></a></div>
+ </div></section>
+<section class="network-section section-pad"><div class="wrap network-layout"><div class="network-copy"><span class="section-kicker" data-es="EL VIAJE NO TERMINA EN UNA PÁGINA" data-en="THE JOURNEY GOES BEYOND ONE PAGE">EL VIAJE NO TERMINA EN UNA PÁGINA</span><h2 data-es="Una idea se convierte<br>en <em>una ruta conectada.</em>" data-en="Turn an idea into<br><em>a connected route.</em>">Una idea se convierte<br>en <em>una ruta conectada.</em></h2><p data-es="TRIP Travel reúne el punto de partida, las herramientas correctas y el acompañamiento para ayudarte a organizar cada parte. Las reservas se completan directamente con los proveedores." data-en="TRIP Travel brings together your starting point, useful tools and human support to help organize each part. Reservations are completed directly with providers.">TRIP Travel reúne el punto de partida, las herramientas correctas y el acompañamiento para ayudarte a organizar cada parte. Las reservas se completan directamente con los proveedores.</p><a class="btn btn-dark" href="conexiones.html" data-es="Explorar la red de servicios ↗" data-en="Explore the service network ↗">Explorar la red de servicios ↗</a></div><div class="route-flow"><div class="route-node route-node-origin"><span class="node-symbol">⌖</span><small data-es="TU PUNTO DE PARTIDA" data-en="YOUR STARTING POINT">TU PUNTO DE PARTIDA</small><strong data-es="Una idea" data-en="An idea">Una idea</strong><span class="node-dots">•••</span></div><div class="route-connector"><span>↗</span></div><div class="route-node route-node-middle"><span class="node-symbol">✦</span><small data-es="HERRAMIENTAS" data-en="TOOLS">HERRAMIENTAS</small><strong data-es="Opciones comparables" data-en="Options to compare">Opciones comparables</strong><span class="node-dots">•••</span></div><div class="route-connector"><span>↗</span></div><div class="route-node route-node-final"><span class="node-symbol">✈</span><small data-es="SIGUIENTE DESTINO" data-en="NEXT DESTINATION">SIGUIENTE DESTINO</small><strong data-es="Tu experiencia" data-en="Your experience">Tu experiencia</strong></div><div class="route-orbit orbit-a"></div><div class="route-orbit orbit-b"></div></div></div></section>
+<section class="trust-strip"><div class="wrap trust-strip-inner"><div><span class="trust-mark">✦</span><span data-es="Explora globalmente" data-en="Explore globally">Explora globalmente</span></div><div><span class="trust-mark">↗</span><span data-es="Compara en el proveedor" data-en="Compare with providers">Compara en el proveedor</span></div><div><span class="trust-mark">♡</span><span data-es="Apoyo directo por WhatsApp" data-en="Direct WhatsApp support">Apoyo directo por WhatsApp</span></div><div><span class="trust-mark">◎</span><span data-es="Base en Lima, visión mundial" data-en="Based in Lima, worldwide vision">Base en Lima, visión mundial</span></div></div></section>
+<section class="cta-banner"><div class="wrap cta-banner-inner"><div><span class="section-kicker" data-es="¿TIENES UNA IDEA DE VIAJE?" data-en="HAVE A TRIP IN MIND?">¿TIENES UNA IDEA DE VIAJE?</span><h2 data-es="El destino lo eliges tú.<br><em>Conectamos el resto.</em>" data-en="You choose the destination.<br><em>We help connect the dots.</em>">El destino lo eliges tú.<br><em>Conectamos el resto.</em></h2></div><div class="cta-actions"><a class="btn btn-primary" href="https://wa.me/51954021718?text=Hola%20TRIP%20Travel%2C%20quiero%20planear%20un%20viaje%20internacional" target="_blank" rel="noopener" data-es="Hablar con TRIP ↗" data-en="Talk to TRIP ↗">Hablar con TRIP ↗</a><a class="btn btn-outline" href="contacto.html" data-es="Dejar una consulta" data-en="Send an inquiry">Dejar una consulta</a></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="index.html"><img src="assets/images/trip-travel-logo-light.png" alt="TRIP Travel" class="footer-logo"></a>
+      <p data-es="Una experiencia de viaje más conectada: descubre el mundo, compara opciones y organiza tu próxima ruta desde una sola plataforma." data-en="A more connected travel experience: discover the world, compare options and shape your next journey from one platform.">Una experiencia de viaje más conectada: descubre el mundo, compara opciones y organiza tu próxima ruta desde una sola plataforma.</p>
+      <span class="base-pill"><span class="pulse-dot"></span><span data-es="Base en Lima · Visión global" data-en="Based in Lima · Global vision">Base en Lima · Visión global</span></span>
+    </div>
+    <div><h4 data-es="Explorar" data-en="Explore">Explorar</h4><ul><li><a href="destinos.html" data-es="Destinos globales" data-en="Global destinations">Destinos globales</a></li><li><a href="hoteles.html" data-es="Hoteles y estancias" data-en="Hotels & stays">Hoteles y estancias</a></li><li><a href="vuelos.html" data-es="Vuelos" data-en="Flights">Vuelos</a></li><li><a href="experiencias.html" data-es="Actividades y lugares" data-en="Activities & places">Actividades y lugares</a></li></ul></div>
+    <div><h4 data-es="Conectar" data-en="Connect">Conectar</h4><ul><li><a href="conexiones.html" data-es="Transporte global" data-en="Global transport">Transporte global</a></li><li><a href="tours.html" data-es="Viajes a medida" data-en="Custom journeys">Viajes a medida</a></li><li><a href="corporativo.html" data-es="Viajes corporativos" data-en="Business travel">Viajes corporativos</a></li><li><a href="nosotros.html" data-es="Quiénes somos" data-en="About TRIP">Quiénes somos</a></li></ul></div>
+    <div><h4 data-es="Contacto" data-en="Contact">Contacto</h4><ul><li><a href="https://wa.me/51954021718" target="_blank" rel="noopener">WhatsApp +51 954 021 718</a></li><li><a href="mailto:reservas@triptravel.pe">reservas@triptravel.pe</a></li><li><a href="contacto.html" data-es="Centro de ayuda" data-en="Help center">Centro de ayuda</a></li></ul><p class="footer-note" data-es="Las reservas y los pagos se realizan en los sitios de cada proveedor, salvo que se indique lo contrario." data-en="Bookings and payments take place on each provider's site unless stated otherwise.">Las reservas y los pagos se realizan en los sitios de cada proveedor, salvo que se indique lo contrario.</p></div>
+  </div>
+  <div class="wrap footer-bottom"><span>© 2026 TRIP Travel · <span data-es="Viaja conectado" data-en="Travel connected">Viaja conectado</span></span><span data-es="Lima, Perú · Alcance internacional" data-en="Lima, Peru · International reach">Lima, Perú · Alcance internacional</span><a href="README.md" data-es="Información de integraciones" data-en="Integration information">Información de integraciones</a></div>
 </footer>
-
-<a class="wa-float" href="https://wa.me/51954021718?text=Hola%20TRIP%20Travel" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.8.8-2.7-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1-.7-.3-1.5-.8-2.1-1.5-.5-.6-1-1.3-1.1-1.5-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3.2-.5s0-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.6-.9 2.6.1 1.2.9 2.4 1 2.5.1.2 1.7 2.7 4.2 3.7.6.3 1.1.4 1.4.5.6.2 1.1.2 1.6.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
-</a>
-
-<script src="script.js"></script>
-</body>
-</html>
+<a class="wa-float" href="https://wa.me/51954021718?text=Hola%20TRIP%20Travel%2C%20quiero%20planear%20un%20viaje%20internacional" aria-label="WhatsApp TRIP Travel" target="_blank" rel="noopener"><span class="wa-symbol">↗</span><span data-es="Conversemos" data-en="Let's talk">Conversemos</span></a>
+<script src="script.js" defer></script>
+</body></html>

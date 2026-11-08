@@ -1,4 +1,4 @@
-# TRIP Travel — Perú primero, el mundo después
+# TRIP Travel — Viajes, experiencias y conexiones
 
 Web estática para GitHub Pages. Subir **el contenido** de este ZIP a la raíz del repositorio `trip-travel`.
 
@@ -17,3 +17,6 @@ Los paisajes son imágenes ilustrativas; no representan inventario ni disponibil
 `index.html`, `destinos.html`, `hoteles.html`, `nosotros.html`, `trip-global-integrated.css`, `trip-interactive-v7.js`, `assets/images/`, `assets/video/`.
 
 Para evitar versiones antiguas en caché, las páginas incluyen `?v=12` en CSS y JavaScript.
+
+## Enfoque editorial
+La portada muestra primero una selección extensa de destinos nacionales por su riqueza turística, seguida de opciones internacionales. No se utiliza un eslogan de prioridad geográfica. Las fichas y paisajes son inspiración visual; no representan reservas ni servicios confirmados.

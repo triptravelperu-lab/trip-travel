@@ -152,3 +152,55 @@ body{background:#fbfaf7;color:#102d39;overflow-x:hidden}
 .primary-nav .nav-cta{background:#05bd69;color:#fff;box-shadow:0 7px 18px rgba(5,189,105,.18)}
 .primary-nav .nav-cta:hover{background:#00a95d}
 .whatsapp-float{display:none!important}
+
+/* TRIP Travel · edición Perú primero */
+.brand-logo{width:138px!important;height:82px!important;object-fit:contain!important;object-position:center!important}
+.footer-logo{width:180px!important;height:auto!important;background:#fff;border-radius:12px;padding:8px;object-fit:contain!important;filter:none!important}
+.brand-tag{font-size:10px!important;letter-spacing:.09em!important;white-space:nowrap}
+.site-header{z-index:1000}
+.whatsapp-float{background:#00b85c!important;color:#fff!important;border:2px solid #fff!important;box-shadow:0 12px 30px #003f2850!important;position:fixed!important;bottom:20px!important;right:20px!important;z-index:2000!important}
+.nav-cta{background:#00b85c!important;color:white!important}
+.showcase-hero{min-height:570px!important}
+.showcase-hero-content h1{max-width:920px!important}
+.showcase-hero-content h1 em{color:#50d6ff!important}
+.peru-destination-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:22px 0 35px}
+.peru-destination,.world-destination{position:relative;display:block;min-width:0;overflow:hidden;border-radius:20px;aspect-ratio:1.2;color:white!important;isolation:isolate;background:#123b4a;text-decoration:none!important}
+.peru-destination:after,.world-destination:after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#071d2de8);z-index:1;pointer-events:none}
+.peru-destination img,.world-destination img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.peru-destination:hover img,.world-destination:hover img{transform:scale(1.08)}
+.peru-destination span,.world-destination span{position:absolute;left:17px;bottom:17px;right:14px;z-index:2;display:flex;flex-direction:column;gap:5px}
+.peru-destination strong,.world-destination strong{font-size:clamp(17px,1.5vw,24px);line-height:1.1;color:#fff}
+.peru-destination small,.world-destination small{font-size:12px;color:#e5f4fa}
+.world-discovery{padding:60px 0 72px;background:#eef6f7}
+.world-destination-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-top:24px}
+.world-destination{aspect-ratio:1.42}
+.motion-feature{padding:76px 0;background:#0a2635;color:#fff}
+.motion-layout{display:grid;grid-template-columns:.9fr 1.3fr;gap:40px;align-items:center}
+.motion-feature h2{font-size:clamp(34px,4vw,58px);line-height:1.07;margin:12px 0 18px;color:#fff}
+.motion-feature h2 em{color:#62d9ff}
+.motion-feature p{color:#d6e6eb;max-width:520px;line-height:1.7}
+.motion-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.motion-cards figure{margin:0;border-radius:18px;overflow:hidden;background:#17475b}
+.motion-cards img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.motion-cards figcaption{padding:12px 16px;font-weight:700;color:white}
+.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.mv-card{padding:35px;border-radius:24px;background:#fff;border:1px solid #dfe9eb;box-shadow:0 15px 40px #0c32400d}
+.mv-card>span{color:#ff6638;font-size:12px;font-weight:800;letter-spacing:.15em}
+.mv-card h3{font-size:clamp(24px,2.6vw,36px);line-height:1.2;margin:14px 0;color:#0b2b3a}
+.mv-card p{line-height:1.75;color:#425a65}
+.mv-note{margin-top:18px;color:#627983;font-size:13px}
+.hotel-types{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:28px}
+.hotel-types article{overflow:hidden;border-radius:20px;background:white;border:1px solid #e2e9ed;box-shadow:0 12px 30px #11394b0d}
+.hotel-types img{display:block;width:100%;height:185px;object-fit:cover}
+.hotel-types h3{padding:16px 17px 0;margin:0;color:#0a2b3a;font-size:20px}
+.hotel-types p{padding:0 17px 20px;color:#566c76;line-height:1.55}
+.hotel-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.hotel-check{list-style:none;padding:0;margin:20px 0 30px}
+.hotel-check li{padding:12px 0 12px 30px;border-bottom:1px solid #d6e1e4;position:relative}
+.hotel-check li:before{content:'✓';position:absolute;left:2px;color:#00a976;font-weight:900}
+.hotel-motion{overflow:hidden;border-radius:22px;background:#0d2a39}
+.hotel-motion video{display:block;width:100%;height:350px;object-fit:cover}
+.hotel-motion p{color:#e0edf1;font-size:12px;padding:14px 18px;margin:0}
+@media(max-width:1050px){.peru-destination-grid,.world-destination-grid,.hotel-types{grid-template-columns:repeat(2,minmax(0,1fr))}.motion-layout{grid-template-columns:1fr}.brand-logo{width:112px!important;height:66px!important}}
+@media(max-width:650px){.peru-destination-grid,.world-destination-grid{gap:10px}.peru-destination,.world-destination{aspect-ratio:.85}.peru-destination span,.world-destination span{left:11px;bottom:11px}.peru-destination strong,.world-destination strong{font-size:16px}.peru-destination small,.world-destination small{font-size:10px}.mv-grid,.hotel-detail-grid{grid-template-columns:1fr}.hotel-types{grid-template-columns:1fr 1fr;gap:10px}.hotel-types img{height:115px}.hotel-types h3{font-size:16px;padding:12px 12px 0}.hotel-types p{font-size:12px;padding:0 12px 12px}.motion-cards{gap:10px}.motion-cards figcaption{font-size:12px;padding:9px}.showcase-hero{min-height:530px!important}.brand-tag{display:none!important}.whatsapp-float{right:12px!important;bottom:12px!important}}
+@media(prefers-reduced-motion:reduce){.peru-destination img,.world-destination img{transition:none!important}}
